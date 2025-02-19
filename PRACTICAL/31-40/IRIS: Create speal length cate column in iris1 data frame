@@ -1,0 +1,9 @@
+# Load the built-in Iris dataset
+data("iris")
+
+# Create new data frame with a new column Sepal.Length.Cate
+iris1 <- iris
+iris1$Sepal.Length.Cate <- cut(iris1$Sepal.Length, breaks = quantile(iris$Sepal.Length, probs = seq(0, 1, by = 0.25)), include.lowest = TRUE, labels = c("Q1", "Q2", "Q3", "Q4"))
+
+# Display the new data frame
+print(head(iris1))
