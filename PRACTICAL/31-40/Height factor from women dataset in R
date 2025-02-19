@@ -1,0 +1,11 @@
+# Load the built-in dataset
+data("women")
+
+# Check the structure of the dataset
+str(women)
+
+# Create a factor corresponding to the height column
+height_factor <- factor(women$height)
+
+# Display the factor
+print(height_factor)
