@@ -1,0 +1,14 @@
+# Load the built-in Iris dataset
+data("iris")
+
+# Dimension
+dim(iris)
+
+# Structure
+str(iris)
+
+# Summary statistics
+summary(iris)
+
+# Standard Deviation of all features
+sapply(iris[, 1:4], sd)
