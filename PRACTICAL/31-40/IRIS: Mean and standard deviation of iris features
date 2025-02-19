@@ -1,0 +1,9 @@
+# Load the built-in Iris dataset
+data("iris")
+
+# Mean and Standard Deviation of features grouped by species
+library(dplyr)
+
+iris %>%
+  group_by(Species) %>%
+  summarize(across(everything(), list(mean = mean, sd = sd)))
