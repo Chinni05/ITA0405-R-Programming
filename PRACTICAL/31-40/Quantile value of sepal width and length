@@ -1,0 +1,8 @@
+# Load the built-in Iris dataset
+data("iris")
+
+# Quantile value of Sepal.Width
+quantile(iris$Sepal.Width)
+
+# Quantile value of Sepal.Length
+quantile(iris$Sepal.Length)
