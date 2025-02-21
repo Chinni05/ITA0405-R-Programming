@@ -1,0 +1,9 @@
+# Bar chart for Survived based on Class and Gender
+plt.figure(figsize=(10, 6))
+sns.countplot(x='class', hue='survived', data=titanic, palette='Set1', dodge=True)
+sns.despine()
+plt.title('Survived vs. Class on the Titanic by Gender')
+plt.xlabel('Passenger Class')
+plt.ylabel('Count')
+plt.legend(title='Survived', loc='upper right', labels=['Not Survived', 'Survived'])
+plt.show()
