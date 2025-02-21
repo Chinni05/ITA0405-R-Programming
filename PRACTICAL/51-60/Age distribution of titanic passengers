@@ -1,0 +1,7 @@
+# Histogram for the Age distribution
+plt.figure(figsize=(10, 6))
+sns.histplot(titanic['age'].dropna(), kde=True, bins=30)
+plt.title('Age Distribution of Titanic Passengers')
+plt.xlabel('Age')
+plt.ylabel('Frequency')
+plt.show()
