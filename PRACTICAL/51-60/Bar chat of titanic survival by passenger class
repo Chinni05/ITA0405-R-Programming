@@ -1,0 +1,15 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+
+# Load the Titanic dataset from seaborn
+titanic = sns.load_dataset('titanic')
+
+# Bar chart for Survived based on Class
+plt.figure(figsize=(10, 6))
+sns.countplot(x='class', hue='survived', data=titanic)
+plt.title('Survived vs. Class on the Titanic')
+plt.xlabel('Passenger Class')
+plt.ylabel('Count')
+plt.legend(title='Survived', loc='upper right')
+plt.show()
